@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Nunito, Roboto, } from "next/font/google";
+import { Nunito, Roboto } from "next/font/google";
 import "./globals.css";
-
-
+import Nav from "./components/Nav";
 
 const nunitoFonts = Nunito({
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
@@ -13,8 +12,6 @@ const robotoFonts = Roboto({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Github Blog",
@@ -28,9 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${nunitoFonts} antialiased`}
-      >
+      <body className={`${nunitoFonts.className} antialiased bg-[#071422]`}>
+        <Nav />
         {children}
       </body>
     </html>
