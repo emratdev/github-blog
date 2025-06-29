@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Routers } from "@/configs/router.config";
 import Link from "next/link";
 import React from "react";
 import { FaCalendarDay, FaExternalLinkAlt } from "react-icons/fa";
@@ -24,7 +24,7 @@ const Post = () => {
               </span>
               Voltar
             </Link>
-            <Link href="#">
+            <Link href={Routers.homePage}>
               <span className="text-blue-400 text-xs cursor-pointer flex gap-1.5 items-center uppercase">
                 ver no github
                 <FaExternalLinkAlt className="w-[12px] h-[12px]" />

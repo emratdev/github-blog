@@ -1,21 +1,14 @@
-import React from 'react'
-import Post from '../components/Post';
-import Articles from '../components/Articles';
+import Articles from "../_components/Articles";
+import Post from "../_components/Post";
 
 
-
-
-const page = () => {
+const Page = () => {
   return (
-    <div>
-        <Post/>
-        <Articles/>
-       
-        
-        
-        
-    </div>
-  )
-}
+    <>
+      <Post />
+      <Articles />
+    </>
+  );
+};
 
-export default page
+export default Page;
