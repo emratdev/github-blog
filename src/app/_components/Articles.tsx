@@ -6,22 +6,22 @@ const Articles = () => {
   return (
     <div className="mt-[120px] w-[800px] h-[208px] mx-auto">
       <div className="leading-normal">
-        <p className="text-[#AFC2D4] mb-6">
+        <p className="text-text mb-6">
           <span className="font-bold">
             Programming languages all have built-in data structures, but these
             often differ from one language to another.
-          </span>{" "}
+          </span>
           This article attempts to list the built-in data structures available
           in JavaScript and what properties they have. These can be used to
           build other data structures. Wherever possible, comparisons with other
           languages are drawn.
         </p>
 
-        <Link className="text-[#3294F8]" href={Routers.homePage}>
+        <Link className="text-blue" href={Routers.homePage}>
           Dynamic typing
         </Link>
 
-        <p className="text-[#AFC2D4] mb-6">
+        <p className="text-text mb-6">
           JavaScript is a loosely typed and dynamic language. Variables in
           JavaScript are not directly associated with any particular value type,
           and any variable can be assigned (and re-assigned) values of all

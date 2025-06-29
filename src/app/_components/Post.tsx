@@ -9,7 +9,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 const Post = () => {
   return (
     <div
-      className="absolute top-[200px] left-1/2 transform -translate-x-1/2 w-[864px] h-[168px] bg-[#0B1B2B] rounded-[10px]
+      className="absolute top-[200px] left-1/2 transform -translate-x-1/2 w-[864px] h-[168px] bg-postBg rounded-[10px]
     shadow-md p-6"
     >
       <div className="flex flex-col justify-center h-full gap-6 ">
