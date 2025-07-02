@@ -1,10 +1,10 @@
-import { Routers } from "@/configs/router.config";
 import Link from "next/link";
 import React from "react";
 import { FaCalendarDay, FaExternalLinkAlt } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { IoChatbubbleOutline } from "react-icons/io5";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import { Routers } from "../../../configs/router.config";
 
 const Post = () => {
   return (
@@ -16,7 +16,7 @@ const Post = () => {
         <div className="w-full">
           <div className="flex justify-between items-center">
             <Link
-              href="/home"
+              href={Routers.homePage}
               className="text-blue-400 text-xs cursor-pointer flex gap-1 items-center uppercase mb-[10px]"
             >
               <span>

@@ -1,5 +1,3 @@
-import { Routers } from '@/configs/router.config';
-import Link from 'next/link';
 import React from 'react'
 
 const Articles = () => {
@@ -17,9 +15,9 @@ const Articles = () => {
           languages are drawn.
         </p>
 
-        <Link className="text-blue" href={Routers.homePage}>
+        <h2 className="text-blue">
           Dynamic typing
-        </Link>
+        </h2>
 
         <p className="text-text mb-6">
           JavaScript is a loosely typed and dynamic language. Variables in
@@ -29,7 +27,7 @@ const Articles = () => {
         </p>
       </div>
 
-      <div className="bg-aboutBg p-2">
+      <div className="bg-aboutBg px-6 py-6">
         <p className="text-white">
           <span>let</span> foo = <span className="text-[#6AD445]">42</span>;
           <span className="text-aboutText ml-4">

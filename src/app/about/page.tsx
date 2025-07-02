@@ -1,13 +1,12 @@
-import Articles from "../_components/Articles";
-import Post from "../_components/Post";
+import Articles from "./_components/Articles";
+import Post from "./_components/Post";
 
-
-const Page = () => {
+const Page = async () => {
   return (
-    <>
+    <section>
       <Post />
       <Articles />
-    </>
+    </section>
   );
 };
 

@@ -5,6 +5,7 @@ import { BsRocket } from 'react-icons/bs';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { IoLogoGithub } from 'react-icons/io';
 import { SlUserFollowing } from 'react-icons/sl';
+import Avatar from "@public/images/avatarr.png";
 
 const ProfileCard = () => {
   return (
@@ -14,19 +15,22 @@ const ProfileCard = () => {
     >
       <div className="flex items-center gap-6 ">
         {/* Avatar */}
-        <Image
-          src="/images/avatarr.png"
-          alt="avatar"
-          width={120}
-          height={100}
-          className="rounded-lg"
-        />
+        <div className='rounded-lg overflow-hidden'>
+          <Image
+            src={Avatar}
+            alt="avatar"
+            priority
+            width={120}
+            height={100}
+            className="w-full h-full"
+          />
+        </div>
 
         {/* Name, bio */}
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <h2 className="text-white text-xl font-bold">Cameron Williamson</h2>
-            <Link href="#">
+            <Link href="#" scroll={false}>
               <span className="text-blue-400 text-xs cursor-pointer flex gap-1.5 items-center">
                 GITHUB
                 <FaExternalLinkAlt className="w-[12px] h-[12px]" />
@@ -49,7 +53,7 @@ const ProfileCard = () => {
               Rocketseat
             </span>
             <span className="flex items-center gap-1.5">
-              <SlUserFollowing className="opacity-70 w-[17px] h-[17px]"/>
+              <SlUserFollowing className="opacity-70 w-[17px] h-[17px]" />
               32 seguidores
             </span>
           </div>

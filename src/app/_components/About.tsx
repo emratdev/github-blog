@@ -1,6 +1,6 @@
-import { Routers } from '@/configs/router.config';
 import Link from 'next/link';
 import React from 'react'
+import { Routers } from '../../configs/router.config';
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-8">
-        <Link href={Routers .aboutPage} className=" mt-12 p-[32px]  w-[416px] h-full mx-auto bg-bg flex flex-col justify-center">
+        <Link href={Routers.aboutPage} className=" mt-12 p-[32px]  w-[416px] h-full mx-auto bg-bg flex flex-col justify-center">
           <div className="flex justify-between  mb-5">
             <h1 className="text-h1 text-lg w-[283px]">
               JavaScript data types and data structures

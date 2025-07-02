@@ -1,9 +1,9 @@
-import { Routers } from "@/configs/router.config";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Routers } from "../configs/router.config";
 
-const Nav = () => {
+export const Nav = () => {
   return (
     <div className="relative w-full h-[296px] pt-16 pb-10 bg-aboutBg">
       <div className="max-w-[864px] mx-auto flex flex-col items-center justify-center">
@@ -19,4 +19,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+
