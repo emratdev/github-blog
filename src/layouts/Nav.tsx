@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Routers } from "../configs/router.config";
+import logo from "@public/images/logo.svg";
 
 export const Nav = () => {
   return (
@@ -11,7 +12,7 @@ export const Nav = () => {
           href={Routers.homePage}
           className="flex flex-col items-center gap-2 text-blue-400 text-2xl font-bold"
         >
-          <Image src="/images/logo.svg" alt="logo" width={40} height={40} />
+          <Image src={logo} alt="logo" width={40} height={40} />
           <span>Github Blog</span>
         </Link>
       </div>
