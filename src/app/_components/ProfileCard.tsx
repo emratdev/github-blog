@@ -22,7 +22,6 @@ const ProfileCard = () => {
             priority
             width={120}
             height={100}
-            className="w-full h-full"
           />
         </div>
 
